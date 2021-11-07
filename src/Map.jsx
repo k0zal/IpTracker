@@ -10,25 +10,6 @@ function Map() {
   
  
   
-//   useEffect(() => {
-//     return(
-//     <>
-//     {loc.length > 1 &&
-//     <MapContainer center={loc} zoom={13} scrollWheelZoom={false}>
-//     <TileLayer
-//       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-//       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-//     />
-//     <Marker position={loc}>
-//       <Popup>
-//         A pretty CSS3 popup. <br /> Easily customizable.
-//       </Popup>
-//     </Marker>
-//   </MapContainer>
-// }
-// </>
-//     )
-//   }, [loc])
 
     return (
        
