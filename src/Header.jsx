@@ -3,6 +3,7 @@ import "./Header.css"
 import searchicon from "./utilities/images/icon-arrow.svg"
 import {Context} from "./ContextProvider"
 
+
 function Header() {
 
     const {searchIp, theirIp, setTheirIp, inputRef} = useContext(Context)
@@ -19,7 +20,7 @@ function enterClick(e){
     //console.log(theirIp.length)
     return (
         <div className="headercontainer">
-            
+           
             <div className="headertext">
                 <p>IP Adress Tracker</p>
             </div>

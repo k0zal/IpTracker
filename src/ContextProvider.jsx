@@ -12,7 +12,7 @@ function ContextProvider({children}) {
     // const geoipifyApiKey = process.env.GEOIPIFY_API_KEY; //at_58qn9jSDnZyNzygYAxMMsm0V0Zk6z&ipAddress
     // const freeGeoipApiKey = process.env.FREEGEOIP_API_KEY; //87e45cb0-3c34-11ec-ba26-5359a34cdfff
     
-    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_58qn9jSDnZyNzygYAxMMsm0V0Zk6z&ipAddress=`
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_i5lopsXt9MaQmMo2YBxUziqcndG6N&ipAddress=`
     const inputRef = useRef(null)
     const [loc, setLoc] = useState([])
 
