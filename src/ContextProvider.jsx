@@ -9,15 +9,15 @@ function ContextProvider({children}) {
     const [info, setInfo] = useState()
     const [myip, setMyIp] = useState()
     const [theirIp, setTheirIp] = useState("")
-    // const geoipifyApiKey = process.env.GEOIPIFY_API_KEY; //at_58qn9jSDnZyNzygYAxMMsm0V0Zk6z&ipAddress
-    // const freeGeoipApiKey = process.env.FREEGEOIP_API_KEY; //87e45cb0-3c34-11ec-ba26-5359a34cdfff
+    // const geoipifyApiKey = process.env.GEOIPIFY_API_KEY; //xxxxxxxx
+    // const freeGeoipApiKey = process.env.FREEGEOIP_API_KEY; //xxxxxxxx
     
-    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_i5lopsXt9MaQmMo2YBxUziqcndG6N&ipAddress=`
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=xxxxxxipAddress=`
     const inputRef = useRef(null)
     const [loc, setLoc] = useState([])
 
     async function firstFetch(){
-        const ipRes = await fetch(`https://api.freegeoip.app/json/?apikey=87e45cb0-3c34-11ec-ba26-5359a34cdfff`)
+        const ipRes = await fetch(`https://api.freegeoip.app/json/?apikey=xxxxxxx`)
         const ipData = await ipRes.json()
 
         const response = await fetch(url+ipData.ip)
@@ -45,12 +45,8 @@ function ContextProvider({children}) {
                 
             }
             
-
-
-
     }
-  
-    
+ 
     useEffect(() => {
     firstFetch()
     setLoading(false)
@@ -68,8 +64,6 @@ useEffect(() => {
             <Context.Provider value={{info, loading, searchIp, theirIp, setTheirIp, inputRef, loc}}>
             {children}
             </Context.Provider>
-            
-       
     )
 }
 
