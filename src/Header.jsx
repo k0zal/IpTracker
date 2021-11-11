@@ -12,9 +12,6 @@ function Header() {
 
 function enterClick(e){
     e.preventDefault()
-    console.log("hej")
-    
-
 }
 
     //console.log(theirIp.length)
